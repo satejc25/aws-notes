@@ -1,1 +1,41 @@
-What is cloud computing ---->
+Q1)What is cloud computing ?
+---->Cloud refers to remote webservers in which various data centers that host databases and run application code.
+Process data from server.
+Access data or application via internet from any region.
+----------------------------------------------------------------------------------------------------------------------
+
+Q2)Deployment model in cloud?
+---->There are total three types of deployment model in cloud {Public Cloud , Private Cloud , Hybrid Cloud}
+1)Public Cloud-->1)Available to everyone on internet.
+               2)Operated on pay as per use model.
+               3)Managed by third party i.e clod provider.
+               4)Same storage is used by multiple user at same time.
+          Adv--->it has low cost because it shares memory.
+                 it is scalable(easy to add and remove) and reliable(24*7 available)
+          Disadv --->performance depends on speed of internet
+                     low security
+
+2)Private Cloud -->1)Known as internal cloud or corporate cloud.
+                 2)provides computing services to private internal network and selected user within organization.
+                 3)provides high level of security and privacy using firewall and internal hosting
+                 4)hp-data center , elastra private cloud , ubuntu are some example.
+         Adv---->more control that is accessed by specific user
+                 more secure
+                 improved performance
+        disadv-->high cost
+                 restrict area of operation
+                 require skilled people to handle it.
+
+3)Hybrid Cloud-->1)Combination of public cloud and private cloud.
+                 2)main moto is to create unified ,automated and well managed computing environment.
+                 3)in hybrid cloud non critical activity is performed by public cloud and critical activity is performed by private cloud.
+                 4)used in healthcare ,finance,univrsities
+         Adv---->secure
+                 flexible
+                 cost effective
+                 risk management
+        disavd---->network issue
+                   infrastructure compatibility.
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Q3)
