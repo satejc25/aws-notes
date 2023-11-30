@@ -1,4 +1,4 @@
-sQ1)What is cloud computing ?
+Q1)What is cloud computing ?
 ---->Cloud refers to remote webservers in which various data centers that host databases and run application code.
 Process data from server.
 Access data or application via internet from any region.
@@ -51,4 +51,8 @@ Q3)Service model in cloud?
              frequent automatic updates
              accessible from anywhere.
 
-2)Paas---->Platform as a Service
+2)Paas---->1)Platform as a Service.
+           2)Offer flexible , scalable cloud platform to develope deploy and run and manage apps.
+           3)Everything is provided from cloud provider right from network ,server ,os,virtulization,middleware,runtime.
+           4)user has to manage only application and data.
+           5)provides platform to create application and put it into cloud where other user can access it.
