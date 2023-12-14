@@ -56,3 +56,31 @@ Q3)Service model in cloud?
            3)Everything is provided from cloud provider right from network ,server ,os,virtulization,middleware,runtime.
            4)user has to manage only application and data.
            5)provides platform to create application and put it into cloud where other user can access it.
+3)IaaS---->Infrastructure as a service.
+           1)based on pay as per use.
+           2)generally in iaas hardware is managed by cloud provider and software is managed by user.
+           3)it is highly scalable
+           4)allows multiple user to share same physical infrstructure
+---------------------------------------------------------------------------------------------------------------------------------------------
+Q4)Architecture of cloud computing?
+--->Cloud architecture is divided into two parts
+
+    1)Frontend
+    2)Backend
+
+Frontend---->Frontend consist of cloud infra which also called as user interface of cloud.
+Client uses console of cloud and uses various services and resources accessed via internet.
+
+Backend----->Backend refers to the cloud itself which is used by the service provider. 
+It contains the resources as well as manages the resources and provides security mechanisms. 
+Along with this, it includes huge storage, virtual applications, virtual machines, traffic control mechanisms, deployment models, etc.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Q5)AWS Global Infrastructure Count ?
+--->The AWS Cloud spans 102 Availability Zones within 32 geographic regions around the world.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q6)Why do we use region?
+---->We use region because the resources which we use in cloud services are region specific and global which means when we select region for specific purpose
+we store our that data in selected region.In short region stores our aws account and its data.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q7)What is service and resources?
+---->Combining resources forms service.Resources are branches or functionality provided in service.
