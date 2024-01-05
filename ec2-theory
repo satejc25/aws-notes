@@ -1,0 +1,25 @@
+What is EC2? EC2 means Elastic Cloud Compute . EC2 is a service provided by aws account to use different types of machine without any hardware constraints on own.In EC2 we can develope and deploy application.
+Features of Amazon EC2?pay as per use,Cost effecient,Flexible and Scalable,It scale up and scale down in terms of memoery , storage and computation.
+Hypervisor & its types?Hypervisor is a software used to run multiple virtual machine on single physical machine. Types:- Type 1 Bare Metal:-Act like lightweight os and runs directly on hosts h/w....Type 2 Hosted :- Runs as a s/w layer on OS
+Where we use hypervisor?We use hypervisor on virtual machine where they allocate CPU and memory to individual vm's as they required.
+EC2 instance state and its code?Pending=0, Running=16, Shutting-Down=32, Terminated=48, Stopping=64, Stopped,80.
+Server Hybenating mode means deep sleep mode where tasks runs in background.
+What is KMS?KMS is key management swervice where we can create craete symmetric(single key pair used for encryption and decryption) and asymmetric key(public and private key pair used for encryption and decryption).
+Amazon EC2 instance types?
+    General Purpose Instance:-Provides balance between memory,compute resource and n/w.ideal for appn uses resources in equal resources.
+    Compute Optimized:-High performance processor,used in dedicated gaming server,used for processing high workload
+    Memory Optimized:-Delivers fast performane for workload that processes large datasets in meomory
+    Storage Optimized:-Used in highworkloads for faster i/o operations
+    Accelerated Computing:-uses h/w accelerators or co-processors.performs functions such as graphics processing.float num calculations,data pattern matching
+    High Performance Compute:-Used for large, complex simulation and deep learning workload.
+Status Check in EC2? 0x2--->1x2--->2x2
+When we logged into the cloud account by default why do we always jump into the north virginia region, why it’s most popular ?It is the first region started by aws. It is most popular because it has highest az's whose count is 6.This makes him highly available and every new updates comes firstly to this region thats why its is most popular.
+What are ebs volumes and its types?EBS is elastic block storage used in aws cloud to store data.Types:-general purpose ssd volume (gp2,gp3), provisioned iops ssd volumes, throughput optimized,cold hdd, magnetic
+Purpose of using ebs volume?they are n/w attached storage.They are in forms of single single blocks which makes them in faster in terms of processing speed,Ebs volumes attached at launch of instance get deleted automatically after instance is deleted.
+Purchasing options in ec2?
+    On-Demand:-Launch instance whenever you want and Pay as per second according to your need
+    Spot Instance:-there are some unused instances which are available in aws use them accordinly in lows cost.
+    Reserved Instance:-here user or organization make commitment to user in short aggrement is signed for specific configuration including region and instance type for 1-3 years.
+    Dedicated Host:-here user pay for dedicated host means a special block of server is alloted to him where he can bring his existing socket,core or vms to reduce cost.
+    Dedicated Instace:-Single tenant h/w is present where we pay for per hours.
+    Saving Plans:-Aggrement is signed for cosistent amount of usage in usd per hr for 1-3 yrs.
