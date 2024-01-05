@@ -1,25 +1,93 @@
-What is EC2? EC2 means Elastic Cloud Compute . EC2 is a service provided by aws account to use different types of machine without any hardware constraints on own.In EC2 we can develope and deploy application.
-Features of Amazon EC2?pay as per use,Cost effecient,Flexible and Scalable,It scale up and scale down in terms of memoery , storage and computation.
-Hypervisor & its types?Hypervisor is a software used to run multiple virtual machine on single physical machine. Types:- Type 1 Bare Metal:-Act like lightweight os and runs directly on hosts h/w....Type 2 Hosted :- Runs as a s/w layer on OS
-Where we use hypervisor?We use hypervisor on virtual machine where they allocate CPU and memory to individual vm's as they required.
-EC2 instance state and its code?Pending=0, Running=16, Shutting-Down=32, Terminated=48, Stopping=64, Stopped,80.
-Server Hybenating mode means deep sleep mode where tasks runs in background.
-What is KMS?KMS is key management swervice where we can create craete symmetric(single key pair used for encryption and decryption) and asymmetric key(public and private key pair used for encryption and decryption).
-Amazon EC2 instance types?
+Q)What is EC2? 
+EC2 means Elastic Cloud Compute . EC2 is a service provided by aws account to use different types of machine without any hardware constraints on own.
+In EC2 we can develope and deploy application.
+
+Q)Features of Amazon EC2?
+pay as per use,Cost effecient,Flexible and Scalable,It scale up and scale down in terms of memoery , storage and computation.
+
+Q)Hypervisor & its types?
+Hypervisor is a software used to run multiple virtual machine on single physical machine. 
+Types:- Type 1 Bare Metal:-Act like lightweight os and runs directly on hosts h/w....Type 2 Hosted :- Runs as a s/w layer on OS
+
+Q)Where we use hypervisor?
+We use hypervisor on virtual machine where they allocate CPU and memory to individual vm's as they required.
+
+Q)EC2 instance state and its code?
+Pending=0, Running=16, Shutting-Down=32, Terminated=48, Stopping=64, Stopped,80.
+
+Q)Server Hybenating mode means deep sleep mode where tasks runs in background.
+
+Q)What is KMS?
+KMS is key management swervice where we can create craete symmetric(single key pair used for encryption and decryption) and asymmetric key(public and private key pair used for encryption and decryption).
+
+Q)Amazon EC2 instance types?
     General Purpose Instance:-Provides balance between memory,compute resource and n/w.ideal for appn uses resources in equal resources.
     Compute Optimized:-High performance processor,used in dedicated gaming server,used for processing high workload
     Memory Optimized:-Delivers fast performane for workload that processes large datasets in meomory
     Storage Optimized:-Used in highworkloads for faster i/o operations
     Accelerated Computing:-uses h/w accelerators or co-processors.performs functions such as graphics processing.float num calculations,data pattern matching
     High Performance Compute:-Used for large, complex simulation and deep learning workload.
-Status Check in EC2? 0x2--->1x2--->2x2
-When we logged into the cloud account by default why do we always jump into the north virginia region, why it’s most popular ?It is the first region started by aws. It is most popular because it has highest az's whose count is 6.This makes him highly available and every new updates comes firstly to this region thats why its is most popular.
-What are ebs volumes and its types?EBS is elastic block storage used in aws cloud to store data.Types:-general purpose ssd volume (gp2,gp3), provisioned iops ssd volumes, throughput optimized,cold hdd, magnetic
-Purpose of using ebs volume?they are n/w attached storage.They are in forms of single single blocks which makes them in faster in terms of processing speed,Ebs volumes attached at launch of instance get deleted automatically after instance is deleted.
-Purchasing options in ec2?
+
+Q)Status Check in EC2? 0x2--->1x2--->2x2
+
+Q)When we logged into the cloud account by default why do we always jump into the north virginia region, why it’s most popular ?
+It is the first region started by aws. It is most popular because it has highest az's whose count is 6.
+This makes him highly available and every new updates comes firstly to this region thats why its is most popular.
+
+Q)What are ebs volumes and its types?
+EBS is elastic block storage used in aws cloud to store data.Types:-general purpose ssd volume (gp2,gp3), provisioned iops ssd volumes, throughput optimized,cold hdd, magnetic
+Purpose of using ebs volume?they are n/w attached storage.
+They are in forms of single single blocks which makes them in faster in terms of processing speed,Ebs volumes attached at launch of instance get deleted automatically after instance is deleted.
+
+Q)Purchasing options in ec2?
     On-Demand:-Launch instance whenever you want and Pay as per second according to your need
     Spot Instance:-there are some unused instances which are available in aws use them accordinly in lows cost.
     Reserved Instance:-here user or organization make commitment to user in short aggrement is signed for specific configuration including region and instance type for 1-3 years.
     Dedicated Host:-here user pay for dedicated host means a special block of server is alloted to him where he can bring his existing socket,core or vms to reduce cost.
     Dedicated Instace:-Single tenant h/w is present where we pay for per hours.
     Saving Plans:-Aggrement is signed for cosistent amount of usage in usd per hr for 1-3 yrs.
+
+Q)Differnce between ami image and template?
+AMI image is collection of various application that are used to creata workspace
+Template is collection of various setting or configuration used to create workspace
+
+Q)What is nic and its typpe?
+NIC is network interface card which connects device to internet.
+Types :- Wired NIC and Wireless NIC
+
+Q)What is elastic IP?Why and where we use it?
+Elastic IP is static IPV4 ip designed for dynamic cloud computing.It doesnt get changes over period of time.It comes from amazon IPV4 addresses pool or custom IPV4 pool.
+When we associate elastic ip to instance it also get associated with instance network interface.Helps to connect with internet.Used in specific region only and cannot be used in another region.
+
+Q)What is snapshot?Why we use it?
+Snapshot is backup of instance.From snapshot we can create image and volume.We can take snapshot of whole instance also and of particular volume attached to instance also.
+
+Q)Difference Between nacl and security groups?
+security group:-associated with instance
+we can only allow ports we cannot deny specific ports
+it is stateful means changes made in inbound will directly reflected to outbound rule
+it is first layer of defence
+
+nacl:-associated with subnet
+we can specify allow and deny of ports
+it is stateless means changes made in inbound rule doest not get reflected in outbound rule
+it is second layer of defence
+
+Q)How many IP Addresses can we attach to the instances ?
+we can assign multiple ipv6 ips
+
+Q)How many types of volume states do we have ?
+Available and in-use
+
+Q)What is key pair and its types?
+Key pair is set of credentials we use to prove our identity while connecting to instance
+key-pair type:-RSA & ED25519(only support mac and linux)
+Public key:-Amazon EC2 stores 
+Private key:-User stores
+
+Q)What is load balancer and its types ?
+Load balancing is the method of distributing network traffic equally across a pool of resources that support an application.
+Provides single point of contact for user on internet
+Types:-Classic LB, Application LB, Network LB, Gateway LB
+
+Q)
