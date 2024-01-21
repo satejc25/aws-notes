@@ -1,0 +1,41 @@
+Q)What is SNS ?
+--->SNS is simple notification service used to get updates on mails and messages. Updates related to actions perform on resources.
+
+Q)Why do we use SNS ?
+--->SNS is used to get updates of actions performed on resources.
+
+Q)What is an Amazon SNS function, and how we can configure it.
+--->We create topic for sns function.Then we subscribe that topic by providing platforn on which we want updates and then we start getting notifications.
+
+Q)Difference between Amazon SNS & Amazon SQS.
+  SNS  -  supports multiple subscription protocol
+	it delivers atleast one message
+	highest throughput in publishes/second
+	
+  SQS  -  supports single subscription protocol
+	it delivers exactly one message
+	high throughput up to 300 publishes/second
+
+Q)What are the different delivery formats and transports in AWS SNS ?
+--->AWS-Knises,Lamba,HTTP,Email,Email-JSON,SQS,HTTPS
+
+Q)What is the difference between SNS FIFO & Standard while creating the SNS topic.
+--->Major difference in FIFO supports SQS subscription protocol while Standard supports multiple subscriptions.
+
+
+Q)On which services are configured with the AWS SNS ?
+--->EC2,S3,Lambda,Cloudwatch
+
+Q)What is 10DLC in AWS ?
+--->10DLC refers to a type of long code used for Application-to-Person (A2P) messaging. 
+The use of 10DLC has become more regulated to prevent spam and ensure the quality of A2P messaging. 
+
+
+Q)What are FIFO topics on SNS ?
+
+
+Q)What is SNS Mobile Push ?
+--->SNS lets you to send push notifications to apps on mobile devices.
+
+Q)On which delivery method do we use and configure the subscription ?
+--->AWS- lambda,http,https,email
