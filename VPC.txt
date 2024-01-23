@@ -20,7 +20,6 @@ Advantages of using default vpc is
 	-igw , rt are configured
 	-highly available
 
-
 Q)What is the internet gateway in VPC ?
 Internet gateway is a gate attached to vpc to provide internet access and use it publically by providing endpoint to access. 
 
@@ -58,4 +57,3 @@ Peering is used to form connection between two networks and transfer files.Traff
 
 Q)What is VPN, Where do we use VPN Tunnel ?
  VPN, which stands for virtual private network, establishes a digital connection between your computer and a remote server owned by a VPN provider, creating a point-to-point tunnel that encrypts your personal data, masks your IP address, and lets you sidestep website blocks and firewalls on the internet
-
