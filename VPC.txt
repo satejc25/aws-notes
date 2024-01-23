@@ -10,32 +10,52 @@ NAT is Network Address Translation.NAT devices are used for private subnets wher
 Q)What is the difference between stateful & stateless filtering ?
 Stateless:- In stateless ACL rules are applied
 	
-		
 Stateful :- In stateful state tables are applied on firewall
 
-What are the advantages of using default VPC ?
+Q)What are the advantages of using default VPC ?
 Advantages of using default vpc is 
-	already implemented
-	subnetting is done 
-	no need to do subnetting
-	igw , rt are configured
-	highly available
+	-already implemented
+	-subnetting is done 
+	-no need to do subnetting
+	-igw , rt are configured
+	-highly available
 
 
-What is the internet gateway in VPC ?
+Q)What is the internet gateway in VPC ?
 Internet gateway is a gate attached to vpc to provide internet access and use it publically by providing endpoint to access. 
 
-What is Network ACL in VPC ?
-Networl ACL is 
+Q)What is Network ACL in VPC ?
+Network ACL is a security term in VPC . Network acl works with subnets where we can allow and deny rules.It is a second layer of defence. 
 
-What is the Security Group in VPC ?
-What is an Elastic IP Address in VPC, and why do we need to use, realtime example ?
-Can we attach one Production Elastic IP to the new Prod server ?
-How does ELB Affect a VPC ?
-What are the limitations of VPC’s, Gateway and subnets ?
-What is a Public IP Address and why do we use it ?
-Explain Bastion Host Concept ?
-When do we need to create a new customised VPC ?
-What is Peering ? Why do we need to peer at two VPC’s ?
-What is VPN, Where do we use VPN Tunnel ?
+Q)What is the Security Group in VPC ?
+Security Group in vpc is securty term which is related to deny rules. It is applied on instance. It is first layer of defence.
+
+Q)What is an Elastic IP Address in VPC, and why do we need to use, realtime example ?
+Elastic ip address is static ip address which doesnt get change it reamins stable. It is used on production server in real time to keep public ip stable. if in case server goes down or gets restarted then public ip would get chnage so elastic ip is used.It is designed for dynamic cloud computing.
+
+Q)Can we attach one Production Elastic IP to the new Prod server ?
+
+
+Q)How does ELB Affect a VPC ?
+Elastic Load Balancer, by default, routes each request independently to the registered instance with the smallest load. ELB automatically reroutes the traffic to the remaining running healthy EC2 instances, if an EC2 instance fails. If a failed EC2 instance is restored, ELB restores the traffic to that instance.
+
+Q)What are the limitations of VPC’s, Gateway and subnets ?
+	-VPC's can be costly if we create customised vpc.
+	-VPC's can be complex to set up and manage.
+	-Limited in term of scalability, 
+
+Q)What is a Public IP Address and why do we use it ?
+Public ips is ipv4 address that is reachable from internet. If some one wants access of your resource oer internet you must have public ip.
+
+Q)Explain Bastion Host Concept ?
+Bastion host concept is used for establishing internet connectivity on private subnet using publisc subnet To perform bastion host concept both subnets should be available in same network.
+
+Q)When do we need to create a new customised VPC ?
+When aw want to set-up new infra for new project at that time we need to craete customised vpc accordint to the network requirement of project.
+
+Q)What is Peering ? Why do we need to peer at two VPC’s ?
+Peering is used to form connection between two networks and transfer files.Traffic can be carried between both networks without having any third party to carry traffic.
+
+Q)What is VPN, Where do we use VPN Tunnel ?
+ VPN, which stands for virtual private network, establishes a digital connection between your computer and a remote server owned by a VPN provider, creating a point-to-point tunnel that encrypts your personal data, masks your IP address, and lets you sidestep website blocks and firewalls on the internet
 
