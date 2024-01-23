@@ -1,0 +1,21 @@
+Q)What is VPC ?
+VPC is Virtual Private Cloud which helps us to create our own network as it improves security and keeps our server safe.
+
+Q)What are the Subnets when working with VPC ?
+Subnets are range of ip addresses which are used to assign private ip's to our server. By divinding larger range ip,s to smaller groups are called as subnetting.Subnetting give the count of how much machine we can launch from this ip range. 
+What is NAT Device?
+What is the difference between stateful & stateless filtering ?
+What are the advantages of using default VPC ?
+What is the internet gateway in VPC ?
+What is Network ACL in VPC ?
+What is the Security Group in VPC ?
+What is an Elastic IP Address in VPC, and why do we need to use, realtime example ?
+Can we attach one Production Elastic IP to the new Prod server ?
+How does ELB Affect a VPC ?
+What are the limitations of VPC’s, Gateway and subnets ?
+What is a Public IP Address and why do we use it ?
+Explain Bastion Host Concept ?
+When do we need to create a new customised VPC ?
+What is Peering ? Why do we need to peer at two VPC’s ?
+What is VPN, Where do we use VPN Tunnel ?
+
