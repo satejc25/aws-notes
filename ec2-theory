@@ -90,4 +90,94 @@ Load balancing is the method of distributing network traffic equally across a po
 Provides single point of contact for user on internet
 Types:-Classic LB, Application LB, Network LB, Gateway LB
 
-Q)
+Q)How does the load balancer work in the backend? Can you explain it ?
+Load balancer is created and basic conf is done. Where internet facing scheme is given to maki it available in public.Where VPC's az's security group and listeners and routing is added and path of project is added.After adding aal these conf we add instances and then creates LB. Conf changes according to type of project,webserver etc. After creating load balancer we get one link called and DNS which makes our project aaccesible from internet.
+
+Q)Features of Load Balancers ?
+Works on Round-Robin algorithm.
+helps yo distribute users on servers.
+keeps cpu utilization normal.
+prevent server crash by distributing load.
+ 
+Q)What is ASG ? & Its types ?
+ASG ia resource of EC2 provided by AWS.Launched using aws template. Where threshold values are added and according to that threshold value it scales up and scales down in terms of insatnaces with same conf and same data.
+
+
+Q)What is a Health Check ?
+Health checks are related to target group where we add our instances for target path to navigate to our project path which we are going to make live. If the path is wrong then it states unhealthy and if everything goes well then it returns code 200 which is healthy.
+
+Q)What is the threshold ?
+Threshold is a limit whic we applies on CPU utilization once it crosses threshold limit asg comes into the ground and starts scaling up servers.
+
+
+Q)What is the group of LB ?
+Groups of LB defines to the path of directory where multiple webpages are stored and it works simulatneously with LB when we mentions path is front of DNS in url.
+
+Q)Why do we prefer ALB over CLB ?
+ALB is new generation load balancer where CLB is previous generation load balancer.
+ALB works using target group which makes easier for load distributin where in CLB target group doesnt play any role.
+
+
+Q)Difference between Web server & Application server ?
+Web-Server:-server statis web site
+	basic session management
+	implements security on serving content
+	scales well for static content serving
+	eg. apache http server, nginx
+	dont execute application code
+
+App-Server:-serves dynamic website
+	advanced session management
+	implements security for application level
+	scales well for dynamic content
+	eg. apache tomcat , microsoft iis
+	execute application code.
+
+Q)What is the target group ?
+Groups of LB defines to the path of directory where multiple webpages are stored and it works simulatneously with LB when we mentions path is front of DNS in url.
+
+Q)What is the desired capacity in ASG ?
+Desired capacity means how much servers we want to launch.
+
+Q)How many types of the Scaling option ?
+Scaling plans ?
+
+Q)Types Auto scaling
+HORIZONTAL Scaling and Vertical Scaling
+
+Q)Difference between vertical scaling and horizontal scaling ?
+Vertical Scaling:- Also known as "scaling up."
+	Involves increasing the capacity of a single machine by adding more resources, such as CPU, RAM, or storage, to the existing hardware.
+	Typically requires upgrading to a more powerful machine, often with more processing power, memory, or storage capacity.
+	Vertical scaling can be limited by the maximum capacity of a single machine.
+	Generally, it is more straightforward to implement as it doesn't require changes to the application architecture to run on multiple machines.
+
+Horizontal Scaling:-Also known as "scaling out."
+	Involves adding more machines or nodes to a distributed system.
+	Each new machine added is typically identical to existing machines.
+	Distributes the load across multiple machines, making it possible to handle increased traffic or workload.
+	Provides better fault tolerance, as the failure of one machine doesn't bring down the entire system.
+	Can be more cost-effective in terms of hardware, as commodity hardware can be used 
+
+Q)Difference between AMI & Snapshot ?
+Amazon Machine Image (AMI):An AMI is a pre-configured virtual machine image that contains the necessary information to launch an instance (virtual server) in the cloud.
+	It includes the operating system, application server, and any additional software required to run an application.
+	AMIs are used to create instances in the cloud. When you launch an instance from an AMI, you get a running virtual server with the specific configuration captured in the AMI.
+	AMIs can be public (shared with the community) or private (customized for specific use within an organization).
+
+Snapshot:A snapshot is a point-in-time copy of the data stored on an Amazon Elastic Block Store (EBS) volume.
+	EBS volumes are used as storage for EC2 instances in AWS, and snapshots are a way to back up the data on these volumes.
+	Snapshots are incremental, meaning that only the data that has changed since the last snapshot is copied. 
+	This helps in optimizing storage costs and time required to create snapshots.
+	Snapshots can be used to create new volumes, restore volumes to a previous state, or migrate volumes across regions.
+
+
+Q)What is difference between EBS/EFS/S3
+EBS:- Elastic block storage
+	Data is stored in blocks.Data is present in structured manner which helps to maintain data.Oftenly O.S are stored in ebs.
+
+EFS:- Elastic file system
+	Elastic file system is used to store files on mounted directory.Used to give access for multiple user to access same file as it supports NFSv4.
+
+S3:-Simple Storage Service
+	Known as object level storage. Each object stored in s3 gets unique id. We can store various type of data like images , videos , txt files etc. Suitable for static website hosting , backup and restore.
