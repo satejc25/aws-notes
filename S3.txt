@@ -13,24 +13,72 @@ Q)What are the naming rules ?
 	-capital letter not allowed
 
 Q)What is the major resource of S3 Bucket ?
+	-versoning
+	-object lock
+	-transfer acceleration
+	-server logging
+	-static website hosting
+	-transfer acceleration
+	requester pay
+
+Q)Why do we need to host static websites instead of dynamic websites ?
+No there is not any compulsion of hosting static or dynamic website but S3 supports static hosting because static websites comes with dynamic data where database is not required. We can store fixed data in S3 bucket needed for hosting.
+
+Q)What is versioning & Why do we need versioning ?
+Versioning is one functio provided in S3 bucket which helps to roll back to version of same file. When we enables versioning the same file get replaced with existing file and the old file get attched to that file in versioning manner which is displayed in tree like structure.
 
 
-Why do we need to host static websites instead of dynamic websites ?
-What is versioning & Why do we need versioning ?
-What are the objects and types of objects that we are uploading into the S3 Bucket ?
-Why is MFA Delete important in S3 Bucket object level ?
-What is S3 Multipart upload ?
-What are the storage classes in Amazon S3 ?   —------------------- IMP
-What is ACL ?
-Why do we need ACL ?
-What is a Life cycle policy ? Why do we need to use the life cycle rule ?
-How can we make our bucket public ?
-How can we give public access to our bucket ?
-Aws pricing factor of the S3 Service.
-How can we make our object public ?
-How can we configure the static website logs in s3 ?
-What is CORS ?
-What is S3 Inventory ?
-What does it mean by Requester pays ?
-What is the secondary word to Transfer acceleration ?Why do we need to use this transfer acceleration ?
+Q)What are the objects and types of objects that we are uploading into the S3 Bucket ?
+Object is a file which describes information related to thing . We can upload any type of object in S3 such as images,movies,backups,different types of files etc.
 
+Q)Why is MFA Delete important in S3 Bucket object level ?
+It helps to prevent accidental deletion of bucket means when any other person who has access to our bucket and if want to perform delete operation then he or she requires mfa code to complete action.
+
+Q)What is S3 Multipart upload ?
+Uploading bigger file into smaller pieces and after completion of upload then combining smaller pieces to one file which we have broken for upload.
+
+Q)What are the storage classes in Amazon S3 ?   —------------------- IMP
+	-Standard:-designed for frequently access data (default storage class)
+	-Intelligent Tiering:-Data with changing or unknown access pattern
+	-Standard Infrequent Access:Infrequently accessed data once a month
+	-One Zone IA:-Recreatable, infrequently accessed data (once a month) stored in a single Availability Zone
+	-Glacier Instant Retrival:-Long-lived archive data accessed once a quarter with instant retrieval in milliseconds
+	-Glacier Flexible Retrival:-Long archived data accessed once a year with retrival time of minutes to hour.
+	-Glacier Deep Archive:-Long archived data accessed once a year with retrival time of hour.
+	-Reduced redundancy:-Noncritical, frequently accessed data with milliseconds access 
+Q)What is ACL ?
+ACL is Access Control List.
+Q)Why do we need ACL ?
+ACL is used to make bucket and object public or private. ACL can be attached to bucket or specific object in bucket. 
+
+Q)What is a Life cycle policy ? Why do we need to use the life cycle rule ?
+Life cycle policy is used to specify rules on objects such as transitioning of object into another storage class , deletion of object after specific period of time , archiving of object . Life cycle policy helps us in storae management and cost management.
+
+Q)How can we make our bucket public ?
+If bucket is already created then go to that bucket and click on permission there is one action called block public acces. Disable block public accesss and then bucket shall become public
+
+Q)How can we give public access to our bucket ?
+By enabling ACL and disabling block public access our bucket will get public access.
+
+Q)Aws pricing factor of the S3 Service.
+AWS pricing factor depend upon sorage we uses , time period how much days our data is going to be there and storage class
+
+Q)How can we make our object public ?
+making object public
+	-firtsly make bucket public
+	-enter s3 bucket go to permission and edit object ownership and enable acl
+	
+Q)How can we configure the static website logs in s3 ?
+Hostl static website in one bucket and enable server logging for that bucket and while configruing propeties for server logging give another bucket arn in destination to store logs.
+
+Q)What is CORS ?
+CORS is "CROSS ORIGIN RESOURCE SHARING" gives functionality of resource sharing into another domain. For ex if abc company is hosting any static website but using s3 as storage platform for their data in that case CORS is used.
+
+Q)What is S3 Inventory ?
+Amazon S3 Inventory helps you manage your storage by creating lists of the objects in an S3 bucket on a defined schedule
+
+Q)What does it mean by Requester pays ?
+Requesters pay means storing data into our bucket and allowing them to use our objects from our bucket and they shall pay accoring to usage of objects from our bucket.
+
+Q)What is the secondary word to Transfer acceleration ?Why do we need to use this transfer acceleration ?
+Transfer acceleration is also defined as edge location where caches are stored for low latency when we access any website or any data using internet. It will make data available from edge location with high speed.
