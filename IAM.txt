@@ -1,0 +1,16 @@
+How many resources do we have in IAM ?
+Deployment model in IAM ?
+Identities in IAM ?
+What is an IAM User ?
+What is the IAM Group ?
+What is the IAM Policy ?
+What is the IAM Role ?
+Where do we attach Identity Based Policy ?
+Where do we attach Resource Based Policy ?
+Can we be able to create Policy via json code ?
+If one user has created it by default, which permission has been assigned to that user ?
+What is dominator policy ?
+What is ARN ? What are the fields in ARN ?
+How many types of ARN Partition ?
+What are Tags ?
+
