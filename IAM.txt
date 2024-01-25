@@ -1,16 +1,45 @@
-How many resources do we have in IAM ?
-Deployment model in IAM ?
-Identities in IAM ?
-What is an IAM User ?
-What is the IAM Group ?
-What is the IAM Policy ?
-What is the IAM Role ?
-Where do we attach Identity Based Policy ?
-Where do we attach Resource Based Policy ?
-Can we be able to create Policy via json code ?
-If one user has created it by default, which permission has been assigned to that user ?
-What is dominator policy ?
-What is ARN ? What are the fields in ARN ?
-How many types of ARN Partition ?
-What are Tags ?
+Q)How many resources do we have in IAM ?
+User,Group,Role,Policy
 
+Q)Deployment model in IAM ?
+Giving minimal permission , craeting iam roles , key management , authentication and authorization.
+
+Q)Identities in IAM ?
+Identities refers to entities that can be authenticated and autorized to access resource within a system.
+
+Q)What is an IAM User ?
+IAM user is a person who has policies attached to perform tasks.
+Q)What is the IAM Group ?
+IAM group is group of user where no. of user are added and policies are directly attacjhed to group which menas indirectly same policies are attached to all user at one time via group.
+
+Q)What is the IAM Policy ?
+IAM polic is set of instrution to perform task or to give access to specific service.
+
+Q)What is the IAM Role ?
+Role helps us to connect between two services. Role make our security more powerful.
+
+Q)Where do we attach Identity Based Policy ?
+We attach identity based policy on user and groups.
+
+Q)Where do we attach Resource Based Policy ?
+We attach resource based policy on resources. for eg. S3
+
+Q)Can we be able to create Policy via json code ?
+Yes we can create policy via json code. AWS has provided json policy creator.
+
+Q)If one user has created it by default, which permission has been assigned to that user ?
+By default root user is created and he has administrator policy attached.
+
+Q)What is dominator policy ?
+Policy with high dominanace or high power is called dominator policy.
+
+Q)What is ARN ? What are the fields in ARN ?
+ARN is amazon resource name helps to give unique identity of each resource . {arn:aws:iam:accid:resource}
+
+Q)How many types of ARN Partition ?
+3 types of arn partition 
+	-AWS
+	-AWS US gov
+	-AWS China
+Q)What are Tags ?
+Tags are key value pair helps to determine info related to specific thing.
