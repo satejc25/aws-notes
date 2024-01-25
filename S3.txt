@@ -46,8 +46,10 @@ Q)What are the storage classes in Amazon S3 ?   —------------------- IMP
 	-Glacier Flexible Retrival:-Long archived data accessed once a year with retrival time of minutes to hour.
 	-Glacier Deep Archive:-Long archived data accessed once a year with retrival time of hour.
 	-Reduced redundancy:-Noncritical, frequently accessed data with milliseconds access 
+
 Q)What is ACL ?
 ACL is Access Control List.
+
 Q)Why do we need ACL ?
 ACL is used to make bucket and object public or private. ACL can be attached to bucket or specific object in bucket. 
 
