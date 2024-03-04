@@ -18,7 +18,7 @@ Pending=0, Running=16, Shutting-Down=32, Terminated=48, Stopping=64, Stopped,80.
 Q)Server Hybenating mode means deep sleep mode where tasks runs in background.
 
 Q)What is KMS?
-KMS is key management swervice where we can create craete symmetric(single key pair used for encryption and decryption) and asymmetric key(public and private key pair used for encryption and decryption).
+KMS is key management service where we can create create symmetric(single key pair used for encryption and decryption) and asymmetric key(public and private key pair used for encryption and decryption).
 
 Q)Amazon EC2 instance types?
     General Purpose Instance:-Provides balance between memory,compute resource and n/w.ideal for appn uses resources in equal resources.
