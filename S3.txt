@@ -1,9 +1,9 @@
 Q)Difference between Block storage & Object Storage ?
 
 Q)Difference between static website & dynamic website ?
-Static website:Static website means fixed data which doent get change or ehich dont have database.They can be executed using s3 bucker or webserver.
+Static website:Static website means fixed data which doesnt get change or which dont have database.They can be executed using s3 bucker or webserver.
 
-Dynamic website:Website which contains databse ane while running in realtime data gets add on in database such websites are called as dynamic website. Appilication server like tomcat apache are used to host dynamic website.
+Dynamic website:Website which contains databse and while running in realtime data gets add on in database such websites are called as dynamic website. Appilication server like tomcat apache are used to host dynamic website.
 
 Q)What are the naming rules ?
 	-starts with small letter
@@ -25,7 +25,7 @@ Q)Why do we need to host static websites instead of dynamic websites ?
 No there is not any compulsion of hosting static or dynamic website but S3 supports static hosting because static websites comes with dynamic data where database is not required. We can store fixed data in S3 bucket needed for hosting.
 
 Q)What is versioning & Why do we need versioning ?
-Versioning is one functio provided in S3 bucket which helps to roll back to version of same file. When we enables versioning the same file get replaced with existing file and the old file get attched to that file in versioning manner which is displayed in tree like structure.
+Versioning is one function provided in S3 bucket which helps to roll back to version of same file. When we enables versioning the same file get replaced with existing file and the old file get attched to that file in versioning manner which is displayed in tree like structure.
 
 
 Q)What are the objects and types of objects that we are uploading into the S3 Bucket ?
@@ -54,16 +54,16 @@ Q)Why do we need ACL ?
 ACL is used to make bucket and object public or private. ACL can be attached to bucket or specific object in bucket. 
 
 Q)What is a Life cycle policy ? Why do we need to use the life cycle rule ?
-Life cycle policy is used to specify rules on objects such as transitioning of object into another storage class , deletion of object after specific period of time , archiving of object . Life cycle policy helps us in storae management and cost management.
+Life cycle policy is used to specify rules on objects such as transitioning of object into another storage class , deletion of object after specific period of time , archiving of object . Life cycle policy helps us in storage management and cost management.
 
 Q)How can we make our bucket public ?
-If bucket is already created then go to that bucket and click on permission there is one action called block public acces. Disable block public accesss and then bucket shall become public
+If bucket is already created then go to that bucket and click on permission there is one action called block public acces. Disable block public accesss and then bucket shall become public.
 
 Q)How can we give public access to our bucket ?
 By enabling ACL and disabling block public access our bucket will get public access.
 
 Q)Aws pricing factor of the S3 Service.
-AWS pricing factor depend upon sorage we uses , time period how much days our data is going to be there and storage class
+AWS pricing factor depend upon storage we uses , time period how much days our data is going to be there and storage class.
 
 Q)How can we make our object public ?
 making object public
@@ -71,7 +71,7 @@ making object public
 	-enter s3 bucket go to permission and edit object ownership and enable acl
 	
 Q)How can we configure the static website logs in s3 ?
-Hostl static website in one bucket and enable server logging for that bucket and while configruing propeties for server logging give another bucket arn in destination to store logs.
+Host static website in one bucket and enable server logging for that bucket and while configruing propeties for server logging give another bucket arn in destination to store logs.
 
 Q)What is CORS ?
 CORS is "CROSS ORIGIN RESOURCE SHARING" gives functionality of resource sharing into another domain. For ex if abc company is hosting any static website but using s3 as storage platform for their data in that case CORS is used.
